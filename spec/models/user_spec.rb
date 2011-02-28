@@ -66,7 +66,7 @@ describe User do
     end
 
     it "should require a matching password confirmation" do
-      User.new(@attr.merge(:password_combination => "invalid")).
+      User.new(@attr.merge(:password_confirmation => "invalid")).
         should_not be_valid
     end
 
